@@ -74,7 +74,6 @@ def login_page():
 
 def chat_page():
     st.title(f"Private Chat - Welcome {st.session_state.username}")
-    st.rerun()
     messages = get_messages()
     
     for msg in reversed(messages):  # Show latest messages at bottom
